@@ -88,3 +88,16 @@ html{
   margin-left: 210px;
   font-size: 30px !important;
 }
+
+.clear-btn{
+  margin-top: 400px;
+  position: absolute;
+}
+
+.scrollable{
+  width: 80%;
+  margin: 0 auto;
+  height: 80%;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+}

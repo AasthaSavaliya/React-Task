@@ -1,9 +1,11 @@
 import { useState } from "react";
+import React, { Component } from 'react';
 import "./App.css";
 
 function App() {
   const [text, settext] = useState("");
   const [showtext, setShowtext] = useState([]);
+  
   return (
     <div className="main">
       <div className="left">
@@ -19,11 +21,20 @@ function App() {
             className="btn btn-secondary">Submit</button>
       </div>
       <div className="right">
+      <div className="scrollable">
         {showtext.map((e) => {
-          return <h1>{e}</h1>;
+          
+          return <h1>{e}</h1>
+          
         })}
-      </div>
+        
+            </div>
+            <button type="button" onClick={() => {
+            setShowtext([]);}} 
+            className="btn btn-secondary">Clear</button>
     </div>
+    
+</div>
   );
 }
 
